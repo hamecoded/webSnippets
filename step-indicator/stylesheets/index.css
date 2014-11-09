@@ -1,0 +1,98 @@
+/* line 3, ../sass/index.scss */
+.step-indicator {
+  display: inline;
+}
+/* line 5, ../sass/index.scss */
+.step-indicator .step {
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-right: 2px;
+}
+/* line 14, ../sass/index.scss */
+.step-indicator .step:before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  border-bottom: 2px dotted #bbb;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 6px;
+}
+/* line 26, ../sass/index.scss */
+.step-indicator .step:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #FD8521;
+  position: absolute;
+  left: -webkit-calc(50% - 6px);
+  left: -moz-calc(50% - 6px);
+  left: -ms-calc(50% - 6px);
+  left: -o-calc(50% - 6px);
+  left: calc(50% - 6px);
+  top: 2px;
+}
+/* line 37, ../sass/index.scss */
+.step-indicator .step .text {
+  padding: 24px 6px;
+  text-align: center;
+  color: #515254;
+  font-family: 'Myriad pro', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+/* line 50, ../sass/index.scss */
+.step-indicator .step.not-completed:after {
+  background-color: #D4D4D4;
+}
+/* line 53, ../sass/index.scss */
+.step-indicator .step.not-completed .text {
+  color: #ADADAD;
+}
+/* line 59, ../sass/index.scss */
+.step-indicator .step.current:after {
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  left: -webkit-calc(50% - 8px);
+  left: -moz-calc(50% - 8px);
+  left: -ms-calc(50% - 8px);
+  left: -o-calc(50% - 8px);
+  left: calc(50% - 8px);
+}
+/* line 65, ../sass/index.scss */
+.step-indicator .step.current .text {
+  color: #515254;
+}
+/* line 70, ../sass/index.scss */
+.step-indicator .step.current .innerCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #F1F1F0;
+  position: absolute;
+  left: -webkit-calc(50% - 5px);
+  left: -moz-calc(50% - 5px);
+  left: -ms-calc(50% - 5px);
+  left: -o-calc(50% - 5px);
+  left: calc(50% - 5px);
+  top: 3px;
+  z-index: 1;
+}
+/* line 84, ../sass/index.scss */
+.step-indicator .step:first-child:before {
+  width: 50%;
+  left: auto;
+  right: 0px;
+}
+/* line 91, ../sass/index.scss */
+.step-indicator .step:last-child:before {
+  width: 50%;
+}
