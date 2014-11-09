@@ -62,6 +62,11 @@ var StepIndicator= (function(){
       
       this.render(); 
     },
+    /**
+     * clears the container and rerenders the entire stepIndicator markup 
+     * based on the this.steps object which can be optionally override when passed to this function
+     * @param  {object} steps [optional] an array of objects {text:...,state:...} to override this.steps 
+     */
     render: function(steps){
       if(steps){
         this.steps= steps;
@@ -86,6 +91,9 @@ var StepIndicator= (function(){
         this.$el.append(stepEl);
       }      
     },
+    /**
+     * will find the current step mark it as completed and set the next one to current
+     */
     next: function() {
       for(var i=0; this.steps.length; i++){
         var stepData= this.steps[i];
