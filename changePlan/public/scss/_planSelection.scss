@@ -1,0 +1,231 @@
+@import "_global";
+
+
+
+.le {
+  .plan-selection-view {
+    .view-container{
+      .engagements-usage-container {
+        float: left;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: $white;
+        border: 1px solid $gray17;
+        border-radius: 2px;
+        padding-bottom: 25px;
+        .engagements-usage-first-row-container {
+          width: 100%;
+          float: left;
+          margin-bottom: 15px;
+          .engagements-usage-num {
+            float: left;
+            color:$orange;
+            font-size: $h1;
+            font-weight: bold;
+            text-align: left;
+            line-height: 14px;
+          }
+          .engagements-usage-txt {
+            float: left;
+            color: $gray85;
+            text-align: left;
+          }
+        }
+        .engagements-usage-second-row-container {
+          color: $gray67;
+          text-align: left;
+        }
+      }
+      .plan-selection-area {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        clear: both;
+        min-height: 400px;
+        background-color: $white;
+        .billing-period-container {
+          height: 50px; //change by page spec
+          padding-left: 20px;
+          margin-bottom: 20px;
+          .billing-period-text {
+            float: left;
+            font-size: $h3;
+            color: $gray67;
+            margin-top: 6px;
+            margin-right: 6px;
+          }
+          .tabs-bar-container {
+            float: left;
+          }
+        }
+        .plans-container {
+          text-align: center;
+          margin: 0 auto;
+          display: table;
+          border-spacing: 15px;
+          .plans-row-container {
+            display: table-row;
+            //.plan-container-wrapper {
+            //display: table-cell;
+            //padding: 2%;
+            .plan-container {
+              display: table-cell;
+              vertical-align: top;
+              padding-bottom: 15px;
+              min-height: 245px;
+              font-size: 15px;
+              background-color: $warmgray5;
+              border-radius: 5px;
+              width: 255px;
+              text-align: center;
+              border: solid $warmgray5 3px;
+              &.selected {
+                border: solid $orange90 3px;
+                background: $white;
+                .selected-icon-container {
+                 background: url("../img/36x36-sprite.png") -800px 0 no-repeat;
+                 visibility: visible;
+              }
+                &:hover {
+                  cursor: pointer;
+                  @include box-shadow(rgba(0, 0, 0, 0) 0px 0px 0px);
+                }
+              }
+              &.plan-chat-container {
+                &:hover {
+                  cursor: auto;
+                  @include box-shadow(rgba(0, 0, 0, 0) 0px 0px 0px);
+                }
+              }
+              &:hover{
+                cursor: pointer;
+                @include box-shadow(rgba(50, 51, 53, 0.3) 0px 0px 7px);
+              }
+              .plan-num-of-engagements {
+                padding-top: 10px;
+                font-size: 48px;
+              }
+              .engagements-label-container {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 15px;
+                .engagements-label {
+                  margin-right: -5px;
+                  font-size: 20px;
+                  font-weight: bold;
+                  display: inline-block;
+                }
+              }
+              .per-month-label {
+                font-size: $h4;
+                display: inline-block;
+              }
+              .plan-price-container {
+                display: inline-block;
+                width: 100%;
+                .plan-price {
+                  font-size: $h1;
+                  margin-right: -5px;
+                  display: inline-block;
+                }
+              }
+              .plan-discount-container {
+                padding-left: 13px;
+                padding-right: 13px;
+                .plan-discount-first-row {
+                  text-align: left;
+                  font-size: $h4;
+                  margin-bottom: 15px;
+                  .plan-discount-percentage {
+                    font-weight: bold;
+                    float: left;
+                  }
+                  .plan-discount-label {
+                    font-weight: bold;
+                    float: left;
+                  }
+                }
+                .plan-discount-second-row {
+                  width: 100%;
+                  margin-bottom: 15px;
+                  display: inline-block;
+                  .plan-list-label {
+                    font-size: $h4;
+                    float: left;
+                  }
+                  .plan-list-price {
+                    font-size: $h3;
+                    float: right;
+                    text-decoration: line-through;
+                  }
+                }
+              }
+              .plan-additional-container {
+                text-align: left;
+                font-size: 13px;
+                padding-left: 13px;
+                padding-right: 13px;
+              }
+              .selected-icon-container {
+                visibility: hidden;
+                width: 36px;
+                height: 36px;
+                margin-top:-19px;
+                display: inline-block;
+              /*                &.visible {
+                background: url("../img/36x36-sprite.png") -800px 0 no-repeat;
+                display: inline-block;
+                visibility: visible;
+              }*/
+              }
+              .recommended-container {
+                text-align: center;
+                margin-bottom: 13px;
+                margin-top: 13px;
+                height: 33px;
+                .separate-horizontal {
+                  position: relative;
+                  top: 18px;
+                  left: 0px;
+                  border-bottom: 1px dashed $gray25;
+                }
+
+                .recommended-button {
+                  visibility: hidden;
+                  &.visible {
+                    font-size: 13px;
+                    min-width: 70px;
+                    display: inline-block;
+                    position: relative;
+                    top: 0px;
+                    background-color: $orange90;
+                    padding: 10px;
+                    border-radius: 18px;
+                    color: #ffffff;
+                    visibility: visible;
+                  }
+                }
+              }
+              .more-options-label {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 42px;
+                margin-bottom: 10px;
+              }
+              .more-options-description {
+                font-size: 16px;
+                line-height: 18px;
+                padding-left: 13px;
+                padding-right: 13px;
+                margin-bottom: 55px;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

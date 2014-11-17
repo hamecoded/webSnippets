@@ -1,2 +1,13 @@
+node_modules
+bower_components
 .sass-cache
 .DS_Store
+.idea
+doc/gitbook
+*.log
+
+changePlan/dist/
+changePlan/tmp/
+changePlan/doc/
+changePlan/public/css
+changePlan/public/index.html

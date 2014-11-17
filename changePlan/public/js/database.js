@@ -1,0 +1,15 @@
+/**
+ * description
+ * Author: Oded Sagir
+ * @param  Object require for adding dependencies
+ * @return Object         Class Object
+ */		
+define(function(require) {
+   
+    var database = {
+    	upgradePlans: {"selectedPlan":"30 / Annual","plans":[{"lastUpdatedDate":1393622650000,"productName":"LiveEngage","productRatePlanName":"30 / Quarterly","baseBillingFrequencyStr":"Quarter","baseBillingFrequencyMonths":3,"includedUnits":30,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":297.00,"overageUnitPrice":3.98,"discountPercentage":70,"discountPrice":207.90}},"recommended":true,"currencies":["USD"]},{"lastUpdatedDate":1398966463000,"productName":"LiveEngage","productRatePlanName":"30 / Annual","baseBillingFrequencyStr":"Annual","baseBillingFrequencyMonths":12,"includedUnits":30,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":1188.00,"overageUnitPrice":3.98,"discountPercentage":90,"discountPrice":1069.20}},"recommended":true,"currencies":["USD"]},{"lastUpdatedDate":1398599900000,"productName":"LiveEngage","productRatePlanName":"100 / Quarterly","baseBillingFrequencyStr":"Quarter","baseBillingFrequencyMonths":3,"includedUnits":100,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":816.00,"overageUnitPrice":2.5,"discountPercentage":90,"discountPrice":734.40}},"recommended":false,"currencies":["USD"]},{"lastUpdatedDate":1394206022000,"productName":"LiveEngage","productRatePlanName":"100 / Annual","baseBillingFrequencyStr":"Annual","baseBillingFrequencyMonths":12,"includedUnits":100,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":3264.00,"overageUnitPrice":2.66,"discountPercentage":75,"discountPrice":2448.00}},"recommended":false,"currencies":["USD"]},{"lastUpdatedDate":1398976221000,"productName":"LiveEngage","productRatePlanName":"330 / Quarterly","baseBillingFrequencyStr":"Quarter","baseBillingFrequencyMonths":3,"includedUnits":330,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":2187.00,"overageUnitPrice":2.3,"discountPercentage":75,"discountPrice":1640.25}},"recommended":false,"currencies":["USD"]},{"lastUpdatedDate":1393622753000,"productName":"LiveEngage","productRatePlanName":"330 / Annual","baseBillingFrequencyStr":"Annual","baseBillingFrequencyMonths":12,"includedUnits":330,"discountPeriods":1,"discountAppliesTo":["flatFeePrice"],"ratePlanCharges":{"USD":{"oneTimeFees":null,"flatFeePrice":8748.00,"overageUnitPrice":2.66,"discountPercentage":75,"discountPrice":6561.00}},"recommended":false,"currencies":["USD"]}]}
+
+    };
+   
+    return database; 
+});

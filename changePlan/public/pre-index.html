@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello @VERSION</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    
+	<!-- @if DEBUG=true -->
+	<link rel="stylesheet" href="/css/main.css" />
+	<script src="//localhost:35729/livereload.js"></script>
+	<!-- @endif -->
+
+	<!-- @if DEBUG=false -->
+	<link rel="stylesheet" href="/css/@APP_NAME.css?rel=@@timestamp" />
+	<!-- @endif -->
+
+</head>
+<body>
+	<div class="le">
+		<div class="plan-selection-view">
+			<div class="view-container">
+				<div class="plan-selection-area">
+					<div class="plans-container">
+						<div class="plans-row-container">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- @if DEBUG=true -->
+	<script type="text/javascript">
+		window.require= {
+			baseUrl: "../"
+		};
+	</script>
+    <script type="text/javascript" 
+    	data-main="/js/@APP_NAME.js" 
+    	src="/bower_components/requirejs/require.js"></script>
+   	<!-- @endif -->
+
+	<!-- @if DEBUG=false -->
+    <script type="text/javascript" 
+    	data-main="/js/@APP_NAME.js?rel=@@timestamp" 
+    	src="/bower_components/requirejs/require.js?rel=@@timestamp"></script>
+   	<!-- @endif -->
+</body>
+</html>

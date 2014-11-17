@@ -1,0 +1,102 @@
+@import "compass/css3";
+@import "compass/css3/opacity";
+@import "compass/css3/user-interface";
+@import "compass/utilities";
+@import "compass/typography/vertical_rhythm";
+@import "compass/typography/text/force-wrap";
+
+$default-font-size: 13;
+$default-font-size-px: 13px;
+$experimental-support-for-opera: true;
+/*
+ * For any color change here, update the color in /assets/js/const.js
+ */
+$black: #000;
+$gray100: #323336;
+$gray90: #46474a;
+$gray85: #515254;
+$gray80: #5a5b5e;
+$gray75:  #656568;
+$gray67: #767678;
+$gray56: #8c8d8f;
+$gray50: #98999b;
+$gray40: #adadad;
+$gray30: #c1c2c3;
+$gray25: #ccc;
+$gray20: #d6d6d6;
+$gray17: #dcdcdc;
+$gray13: #e5e5e5;
+$gray9:  #ededed;
+$gray5:  #f5f5f5;
+$warmgray5:#f4f4f3;
+$gray4: #f7f7f7;
+$white:#fff;
+$orange:#ff9801;
+$orange90:#ffa92c;
+$orangeDrk1:#eb8200;
+$orangeDrk2:#bf6913;
+$blue:#4b91b9;
+$green: #5da322;
+$red: #de0a23;
+$red85: #e32f44;
+$yellow: #feec96;
+$defaultColor:$gray100;
+
+
+$h1: 24px;
+$h2: 15px;
+$h3: 16px;
+$h4: 14px;
+$h6: 12px;
+
+$tiny: 30px;
+$tiny2: 40px;
+$tiny3: 45px;
+$tiny4: 50px;
+$xxlarge: 520px;
+$xxlarge2: 590px;
+$xlarge: 420px;
+$xlarge2: 433px;
+$xlarge3: 415px;
+$xlarge4: 385px;
+$medium: 330px;
+$medium2: 355px;
+$mid-small1: 246px;
+$mid-small2: 263px;
+$mid-small3: 231px;
+$small: 190px;
+$xxxsmall: 65px;
+$xxsmall: 95px;
+$xxsmall1: 120px;
+$xxsmall2: 100px;
+$xsmall: 150px;
+$xsmall2: 127px;
+
+$input-xxlarge-h: 40px;
+$input-medium-h: 30px;
+$input-small-h: 22px;
+
+$btn-flat-medium: 220px;
+
+$user-bar-height: 22px;
+$databar-height: 51px;
+$content-top: $user-bar-height + $databar-height;
+$databar-status-image-width: 16px;
+$databar-status-image-height: 16px;
+
+$live-engage-logo-width: 100px;
+$live-engage-logo-height: 50px;
+
+$list-max-width: $xxlarge;
+
+
+
+
+
+
+
+
+
+
+
+
